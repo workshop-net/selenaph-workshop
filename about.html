@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Selena ph × Sulit Dito MNL</title>
+<meta name="description" content="The story behind the collaboration — Selena ph's elegant dresses meet Sulit Dito MNL's everyday finds.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&family=Baloo+2:wght@600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="thread" aria-hidden="true">
+  <div id="threadFill"></div>
+  <div id="threadDiamond"></div>
+</div>
+
+<!-- ============ Header ============ -->
+<header id="header">
+  <div class="header-in">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">
+        Selena ph
+        <span class="x">×</span>
+        <span class="sulit">Sulit Dito MNL</span>
+      </span>
+    </a>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="sale.html">Sale</a>
+      <a class="nav-link" href="products.html">Products</a>
+      <a class="nav-link active" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="h-right">
+      <a class="btn btn-ghost visit-btn" href="contact.html">Order here</a>
+      <button class="icon-btn" id="pickBtn" aria-label="Your picks">
+        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span id="pickCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+      </button>
+
+      <div class="pick-panel" id="pickPanel">
+        <div class="pp-head"><span>Your Picks</span>
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
+        </div>
+        <div class="pp-list" id="ppList"><p class="pp-empty">No picks yet — the racks await.</p></div>
+        <div class="pp-foot"><span>Total — <b id="ppTotal">₱0</b></span><button id="ppClear">Clear all</button></div>
+        <p class="pp-hint">Send your picks to our <a href="contact.html">order page</a> or text us — half payment (50%) secures your order.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <span class="mm-eyebrow">Selena ph × Sulit Dito MNL</span>
+  <a class="mm-link" href="index.html">Home</a>
+  <a class="mm-link" href="sale.html">Sale</a>
+  <a class="mm-link" href="products.html">Products</a>
+  <a class="mm-link" href="about.html">About</a>
+  <a class="mm-link" href="contact.html">Contact</a>
+</div>
+
+<!-- ============ Page Hero ============ -->
+<section class="page-hero">
+  <div class="ph-mark" aria-hidden="true">About</div>
+  <span class="corner tl" style="top:96px"></span>
+  <span class="corner tr" style="top:96px"></span>
+  <span class="corner bl"></span>
+  <span class="corner br"></span>
+  <div class="wrap">
+    <p class="eyebrow">— Our collaboration</p>
+    <h1>Two small shops, <em>one</em> <span class="hand">sulit</span> story.</h1>
+    <p>Selena ph curates dresses. Sulit Dito MNL hunts down everyday finds. Together, we built a single cozy corner where both racks live side by side.</p>
+  </div>
+</section>
+
+<!-- ============ Marquee ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="m-track">
+    <div class="m-group">
+      <span class="m-item">A Collaboration</span><span class="m-d"></span>
+      <span class="m-item">Dresses × Finds</span><span class="m-d"></span>
+      <span class="m-item">Curated Weekly</span><span class="m-d"></span>
+      <span class="m-item">Tested &amp; Proven</span><span class="m-d"></span>
+      <span class="m-item"><em>sulit na sulit, promise!</em></span><span class="m-d"></span>
+    </div>
+    <div class="m-group">
+      <span class="m-item">A Collaboration</span><span class="m-d"></span>
+      <span class="m-item">Dresses × Finds</span><span class="m-d"></span>
+      <span class="m-item">Curated Weekly</span><span class="m-d"></span>
+      <span class="m-item">Tested &amp; Proven</span><span class="m-d"></span>
+      <span class="m-item"><em>sulit na sulit, promise!</em></span><span class="m-d"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ About Main ============ -->
+<section class="sec" id="about-main">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">01 — How it started</p>
+        <h2>Every dress deserves <em>another spin</em>.</h2>
+      </div>
+      <span class="sec-num">01</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal" style="--d:.05s">
+        <p class="lede">Selena ph began with a simple frustration: gorgeous dresses hanging unworn in closets while other women searched everywhere for exactly that piece. So we built the bridge. Our racks carry two kinds of dresses — brand-new pieces chosen from trusted suppliers, and pre-loved gems we inspect, launder and photograph honestly, one by one.</p>
+        <p>Nothing here is fast fashion filler. Whether it arrives with tags or with a history, every dress leaves us ready for a wedding, a date, a first day of work — whatever moment you're dressing for. And in sizes Small through Extra Large, there's a fit waiting for every body.</p>
+        <p>Then came the friendship. Selena ph met Sulit Dito MNL — a friendly online tiangge based in Holy Spirit, Quezon City — and we realized our customers were often the same women. They wanted dresses for occasions, and finds for everyday life. Why make them hop between two shops?</p>
+        <p>So we joined forces. One website, two boutiques, and a single promise: every peso you spend here is <em>sulit</em>. Every dress is curated with love, every find is tested with care, and every order ships from the same small team in Quezon City.</p>
+        <p class="sig">Selena × Sulit<small>Curators &amp; friends, Quezon City</small></p>
+      </div>
+
+      <div class="reveal" style="--d:.15s">
+        <figure class="quote-card">
+          <blockquote class="q">A dress should never hang unworn — and a find should never be overpriced. We make sure of <em>both</em>.</blockquote>
+          <figcaption class="q-attr">— The Selena ph × Sulit Dito MNL team</figcaption>
+        </figure>
+        <div class="values">
+          <div class="value"><b>Brand new</b><span>Fresh pieces with tags on, straight from our suppliers.</span></div>
+          <div class="value"><b>Pre-loved</b><span>Carefully inspected, laundered and honestly described.</span></div>
+          <div class="value"><b>Tested &amp; proven</b><span>Watches &amp; electronics checked, with photo/video proof.</span></div>
+          <div class="value"><b>Same-day ship-out</b><span>Payments confirmed before 5PM ship the same day.</span></div>
+          <div class="value"><b>Sizes S–XL</b><span>Because every woman deserves her perfect fit.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span></span></div>
+
+<!-- ============ Dual Brands ============ -->
+<section class="sec" id="dual-brands" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">02 — Meet the brands</p>
+        <h2>Two boutiques, <em>side by side</em>.</h2>
+        <p>Each brand keeps its own personality — Selena ph stays elegant and editorial, Sulit Dito MNL stays warm and playful — but they share one roof, one checkout, and one promise of quality.</p>
+      </div>
+      <span class="sec-num">02</span>
+    </div>
+
+    <div class="dual-brands">
+      <div class="brand-card selena reveal" style="--d:0s">
+        <p class="bc-name">Selena ph</p>
+        <p class="bc-tag">Dresses for women · New &amp; Pre-Loved</p>
+        <p>Selena ph is the dress boutique of this collaboration. Every piece is hand-picked — brand-new arrivals straight from trusted suppliers, and pre-loved gems inspected, laundered, and ready for their next chapter. Sizes Small to Extra Large, priced with love.</p>
+        <ul class="bc-list">
+          <li>Brand-new dresses with tags on, fresh from suppliers</li>
+          <li>Pre-loved finds, freshly laundered and honestly described</li>
+          <li>Sizes Small, Medium, Large, and Extra Large</li>
+          <li>Curated weekly — new racks drop on our page</li>
+        </ul>
+      </div>
+
+      <div class="brand-card sulit reveal" style="--d:.1s">
+        <p class="bc-name">Sulit Dito MNL</p>
+        <p class="bc-tag">Brand new finds · Super sale steals</p>
+        <p>Sulit Dito MNL is your friendly online tiangge from Holy Spirit, Quezon City. We sell brand-new items — from watches and electronic accessories to everyday carry essentials — plus limited Super Sale steals that go fast. <em>Dito, sulit ang bawat piso.</em></p>
+        <ul class="bc-list">
+          <li>Brand-new watches, earbuds, totes &amp; accessories</li>
+          <li>Super sale steals — limited stock, first-come first-served</li>
+          <li>Every watch &amp; gadget tested before shipping</li>
+          <li>Photo or video proof sent on chat for peace of mind</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span></span></div>
+
+<!-- ============ Values + Rules Summary ============ -->
+<section class="sec" id="values" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">03 — What we stand for</p>
+        <h2>The little <em>promises</em> we keep.</h2>
+        <p>Whether you're buying a dress or a find, these are the rules that shape every order we ship.</p>
+      </div>
+      <span class="sec-num">03</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal" style="--d:.05s">
+        <p>We started small — just a Facebook page and a handful of regulars — and we grew because we kept our promises. Every dress is honestly described, even when "honestly" means pointing out a tiny flaw. Every gadget is tested, even when testing takes an extra hour. Every order is packed with care, even when the courier is already at the door.</p>
+        <p>The collaboration didn't change any of that. It just made it easier for you to find everything in one place. Same team, same standards, same <em>sulit na sulit</em> promise — now with twice the racks to browse.</p>
+        <p>Thank you for being part of our story. Whether it's your first order or your fiftieth, we're honored to dress you, equip you, and ship to your door.</p>
+      </div>
+
+      <div class="reveal" style="--d:.15s">
+        <div class="values">
+          <div class="value"><b>Half payment</b><span>50% downpayment secures reservations &amp; protects everyone from cancellations.</span></div>
+          <div class="value"><b>5PM cut-off</b><span>Payments confirmed before 5PM ship the same day, every day.</span></div>
+          <div class="value"><b>1–2 day delivery</b><span>Manila &amp; nearby provinces receive in just 1–2 days.</span></div>
+          <div class="value"><b>24–48h returns</b><span>Defective items? Report with video proof within 24–48 hours of opening.</span></div>
+          <div class="value"><b>No change-of-mind</b><span>We don't accept returns for change of mind — please order with care.</span></div>
+          <div class="value"><b>Respectful buyers</b><span>Please be a responsible &amp; respectful buyer — we'll do the same for you.</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-solid" href="products.html"><span>Browse the racks</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="btn btn-ghost" href="contact.html"><span>Order here</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <p class="foot-name">Selena ph <span class="x">×</span> <span class="sulit">Sulit Dito MNL</span></p>
+  <p class="foot-tag">Dresses · Brand new finds · Super sale steals</p>
+  <hr class="foot-hr">
+  <div class="foot-grid">
+    <div>
+      <p class="f-head">Browse</p>
+      <div class="f-links">
+        <a href="index.html">Home</a>
+        <a href="sale.html">Sale</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="f-visit">
+      <p class="f-head">Visit</p>
+      <p>Holy Spirit, Quezon City, Philippines<br>Monday – Saturday · 10am – 7pm<br>Call / Text — 0969 450 7597<br>Ship-out cut-off — 5PM daily</p>
+    </div>
+    <div class="f-hello">
+      <p class="f-head">Say Hello</p>
+      <p>Message us on Facebook or text our number to reserve a piece — we reply fast and ship faster.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/sulitditoManila" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="tel:+639694507597" aria-label="Call or text">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://maps.google.com/?q=Holy+Spirit,+Quezon+City,+Philippines+1127" target="_blank" rel="noopener" aria-label="Map">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 Selena ph × Sulit Dito MNL — Curated with love.</span>
+    <span>Holy Spirit, QC · Ships nationwide</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div id="toasts" aria-live="polite"></div>
+
+<script>
+(function(){
+  const $  = (s,c)=> (c||document).querySelector(s);
+  const $$ = (s,c)=> Array.prototype.slice.call((c||document).querySelectorAll(s));
+
+  const ready = ()=> document.body.classList.add('is-ready');
+  window.addEventListener('load', ready);
+  setTimeout(ready, 200);
+
+  const header = $('#header'), fill = $('#threadFill'), diamond = $('#threadDiamond'), toTop = $('#toTop');
+  let ticking = false;
+  function onScroll(){
+    header.classList.toggle('scrolled', scrollY > 10);
+    toTop.classList.toggle('show', scrollY > 600);
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = max > 0 ? Math.min(1, scrollY / max) : 0;
+    fill.style.height = (p * 100) + '%';
+    diamond.style.top = (p * 100) + '%';
+    ticking = false;
+  }
+  addEventListener('scroll', ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', ()=> scrollTo({top:0, behavior:'smooth'}));
+
+  const ro = new IntersectionObserver(es=> es.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); }
+  }), {threshold:.12});
+  $$('.reveal').forEach(el=> ro.observe(el));
+
+  function toast(msg){
+    const c = $('#toasts'), t = document.createElement('div');
+    t.className = 'toast';
+    t.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>' + msg + '</span>';
+    c.appendChild(t);
+    requestAnimationFrame(()=> t.classList.add('show'));
+    setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=> t.remove(), 500); }, 3400);
+  }
+
+  const picks = JSON.parse(localStorage.getItem('picks') || '[]');
+  const panel = $('#pickPanel'), pickBtn = $('#pickBtn'), count = $('#pickCount');
+  function savePicks(){ localStorage.setItem('picks', JSON.stringify(picks)); }
+  function renderPicks(){
+    const list = $('#ppList');
+    count.textContent = picks.length;
+    count.classList.toggle('on', picks.length > 0);
+    if(!picks.length){
+      list.innerHTML = '<p class="pp-empty">No picks yet — the racks await.</p>';
+      $('#ppTotal').textContent = '₱0';
+      return;
+    }
+    list.innerHTML = picks.map((it,i)=>
+      '<div class="pp-item"><span>' + it.name + '<span class="brand-tag">' + (it.brand||'Selena ph') + '</span></span>' +
+      '<span class="pp-price">₱' + it.price.toLocaleString() + '</span>' +
+      '<button class="pp-x" data-i="' + i + '" aria-label="Remove">' +
+      '<svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>'
+    ).join('');
+    $('#ppTotal').textContent = '₱' + picks.reduce((s,i)=> s + i.price, 0).toLocaleString();
+  }
+  $('#ppList').addEventListener('click', e=>{
+    const x = e.target.closest('.pp-x');
+    if(x){ picks.splice(+x.dataset.i, 1); savePicks(); renderPicks(); }
+  });
+  $('#ppClear').addEventListener('click', ()=>{
+    if(picks.length){ picks.length = 0; savePicks(); renderPicks(); toast('Your picks have been cleared.'); }
+  });
+  pickBtn.addEventListener('click', e=>{ e.stopPropagation(); panel.classList.toggle('open'); });
+  document.addEventListener('click', e=>{
+    if(panel.classList.contains('open') && !panel.contains(e.target) && e.target !== pickBtn) panel.classList.remove('open');
+  });
+  renderPicks();
+
+  const menu = $('#mobileMenu');
+  $('#burger').addEventListener('click', ()=> menu.classList.add('open'));
+  $('#mmClose').addEventListener('click', ()=> menu.classList.remove('open'));
+  $$('.mm-link').forEach(a=> a.addEventListener('click', ()=> menu.classList.remove('open')));
+
+  document.addEventListener('keydown', e=>{
+    if(e.key === 'Escape'){ panel.classList.remove('open'); menu.classList.remove('open'); }
+  });
+})();
+</script>
+</body>
+</html>
