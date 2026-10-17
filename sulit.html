@@ -33,7 +33,7 @@
   --hand:'Caveat',cursive;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth;scroll-padding-top:128px}
 body{
   background:var(--peach);
   color:var(--ink);
@@ -61,9 +61,37 @@ body::after{
 #threadDiamond{position:absolute;left:50%;top:0;width:7px;height:7px;background:var(--orange);transform:translate(-50%,-50%) rotate(45deg)}
 @media(max-width:1100px){.thread{display:none}}
 
+/* ============ Brand switch strip (top) ============ */
+.brand-switch{
+  position:fixed;top:0;left:0;right:0;z-index:65;height:38px;display:flex;align-items:center;
+  justify-content:center;gap:0;background:var(--teal-deep);
+  border-bottom:1px solid rgba(255,201,60,.25);
+  font-family:var(--sans);font-weight:800;font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+}
+.bs-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:0 22px;height:100%;
+  color:rgba(252,235,219,.5);text-decoration:none;transition:color .3s,background .3s;
+  position:relative;
+}
+.bs-btn svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bs-btn + .bs-btn::before{
+  content:"";position:absolute;left:0;top:25%;bottom:25%;width:1px;background:rgba(255,201,60,.2);
+}
+.bs-btn.on{color:var(--orange-light)}
+.bs-btn.on::after{
+  content:"";position:absolute;left:22px;right:22px;bottom:-1px;height:2px;background:var(--orange);
+}
+.bs-btn:hover{color:var(--orange-light);background:rgba(242,110,28,.06)}
+.bs-arrow{font-family:var(--hand);font-weight:700;font-size:14px;letter-spacing:0;text-transform:none;color:rgba(255,201,60,.5);margin:0 4px}
+@media(max-width:600px){
+  .brand-switch{font-size:9px;letter-spacing:.2em}
+  .bs-btn{padding:0 14px}
+  .bs-arrow{display:none}
+}
+
 /* ============ Header ============ */
 #header{
-  position:fixed;top:0;left:0;right:0;z-index:60;height:80px;display:flex;align-items:center;
+  position:fixed;top:38px;left:0;right:0;z-index:60;height:80px;display:flex;align-items:center;
   border-bottom:1px solid transparent;transition:background .4s,border-color .4s,padding .4s;
 }
 #header.scrolled{
@@ -553,8 +581,8 @@ footer::before{
 @media(max-width:860px){
   nav,.visit-btn{display:none}
   .burger{display:grid}
-  #header{height:68px}
-  html{scroll-padding-top:80px}
+  #header{height:64px}
+  html{scroll-padding-top:110px}
   .hero-eyebrow{font-size:10px;letter-spacing:.42em}
   .hero-eyebrow::before,.hero-eyebrow::after{width:36px}
   .logo-word{font-size:18px}
@@ -586,6 +614,16 @@ footer::before{
   <div id="threadFill"></div>
   <div id="threadDiamond"></div>
 </div>
+
+<!-- ============ Brand switch strip ============ -->
+<nav class="brand-switch" aria-label="Switch boutique">
+  <a class="bs-btn" href="selena.html">
+    Selena ph
+    <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+  </a>
+  <span class="bs-arrow">·</span>
+  <a class="bs-btn on" href="sulit.html">Sulit Dito MNL</a>
+</nav>
 
 <!-- ============ Header ============ -->
 <header id="header">
