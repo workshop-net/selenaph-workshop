@@ -3,308 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selena ph — Dresses for Women, New & Pre-Loved</title>
+<title>Selena ph × Sulit Dito MNL — Dresses, Finds & Super Sale Steals</title>
+<meta name="description" content="A collaboration between Selena ph (dresses, brand new & pre-loved) and Sulit Dito MNL (brand new finds & super sale steals). One website, two boutiques.">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-<style>
-/* ============ Tokens ============ */
-:root{
-  --beige:#F4EDDD;
-  --beige-2:#FBF7EC;
-  --green:#00301C;
-  --ink:#153426;
-  --ink-soft:rgba(21,52,38,.62);
-  --gold:#AA812F;
-  --gold-deep:#7E6120;
-  --gold-2:#C9A75C;
-  --hair:rgba(170,129,47,.35);
-  --serif:'Cormorant Garamond',serif;
-  --script:'Pinyon Script',cursive;
-  --sans:'Jost',sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{background:var(--beige);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--green);color:var(--beige)}
-img,svg{display:block}
-button{font-family:inherit}
-
-/* film grain */
-body::after{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='240' height='240' filter='url(%23n)' opacity='0.55'/></svg>");}
-
-/* ============ Golden thread (scroll progress) ============ */
-.thread{position:fixed;left:26px;top:0;bottom:0;width:1px;z-index:55;pointer-events:none}
-.thread::before{content:"";position:absolute;inset:0;background:var(--hair)}
-#threadFill{position:absolute;left:0;top:0;width:100%;height:0;background:var(--gold)}
-#threadDiamond{position:absolute;left:50%;top:0;width:7px;height:7px;background:var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
-@media(max-width:1100px){.thread{display:none}}
-
-/* ============ Header ============ */
-#header{position:fixed;top:0;left:0;right:0;z-index:60;height:82px;display:flex;align-items:center;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
-#header.scrolled{background:rgba(244,237,221,.9);backdrop-filter:blur(12px);border-bottom-color:var(--hair)}
-.header-in{width:min(1240px,92%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-family:var(--script);font-size:31px;color:var(--gold);text-decoration:none;line-height:1;white-space:nowrap}
-nav{display:flex;gap:38px}
-.nav-link{position:relative;font-family:var(--sans);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:6px 0;transition:color .3s}
-.nav-link::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s}
-.nav-link:hover,.nav-link.active{color:var(--gold-deep)}
-.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
-.h-right{display:flex;align-items:center;gap:14px;position:relative}
-.icon-btn{position:relative;width:42px;height:42px;display:grid;place-items:center;background:none;border:1px solid transparent;color:var(--green);cursor:pointer;transition:.3s}
-.icon-btn:hover{color:var(--gold-deep);border-color:var(--hair)}
-.icon-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-#pickCount{position:absolute;top:1px;right:-2px;min-width:17px;height:17px;background:var(--gold);color:#FDFBF4;font-family:var(--sans);font-size:10px;display:grid;place-items:center;border-radius:50%;padding:0 4px;transform:scale(0);transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
-#pickCount.on{transform:scale(1)}
-#pickCount.pop{animation:pop .45s}
-@keyframes pop{40%{transform:scale(1.5)}}
-.burger{display:none}
-
-/* picks panel */
-.pick-panel{position:absolute;top:calc(100% + 16px);right:0;width:330px;background:var(--beige-2);border:1px solid var(--hair);box-shadow:0 24px 50px -20px rgba(0,48,28,.35);opacity:0;transform:translateY(-8px);pointer-events:none;transition:.3s;z-index:70}
-.pick-panel.open{opacity:1;transform:none;pointer-events:auto}
-.pp-head{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;border-bottom:1px solid var(--hair);font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--green)}
-.pp-head svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.pp-list{max-height:260px;overflow:auto}
-.pp-item{display:flex;align-items:center;gap:10px;padding:12px 20px;border-bottom:1px solid rgba(170,129,47,.16);font-size:16.5px}
-.pp-item span:first-child{flex:1}
-.pp-price{font-family:var(--sans);font-size:13px;color:var(--gold-deep)}
-.pp-x{background:none;border:none;cursor:pointer;color:var(--ink-soft);display:grid;place-items:center;padding:4px;transition:color .3s}
-.pp-x:hover{color:var(--gold-deep)}
-.pp-x svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
-.pp-empty{padding:28px 20px;text-align:center;font-style:italic;color:var(--ink-soft)}
-.pp-foot{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;font-family:var(--sans);font-size:12px;letter-spacing:.14em;color:var(--green)}
-.pp-foot button{background:none;border:none;cursor:pointer;font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);text-decoration:underline;text-underline-offset:3px;transition:color .3s}
-.pp-foot button:hover{color:var(--gold-deep)}
-.pp-hint{padding:12px 20px 16px;font-style:italic;font-size:15px;color:var(--ink-soft)}
-
-/* ============ Buttons ============ */
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-size:12px;letter-spacing:.24em;text-transform:uppercase;padding:15px 30px;text-decoration:none;cursor:pointer;border:1px solid var(--green);transition:background .35s,color .35s,border-color .35s;background:none}
-.btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s}
-.btn-solid{background:var(--green);color:var(--beige)}
-.btn-solid:hover{background:var(--gold-deep);border-color:var(--gold-deep)}
-.btn-solid:hover svg{transform:translateX(4px)}
-.btn-ghost{color:var(--green);border-color:var(--gold-deep)}
-.btn-ghost:hover{background:var(--green);color:var(--beige)}
-.visit-btn{padding:11px 22px;font-size:11px}
-
-/* ============ Hero ============ */
-.hero{position:relative;min-height:100vh;display:grid;place-items:center;padding:130px 20px 90px;overflow:hidden}
-.hero-mark{position:absolute;right:-7%;top:50%;font-family:var(--script);font-size:clamp(320px,44vw,640px);color:rgba(170,129,47,.07);line-height:1;pointer-events:none;user-select:none;white-space:nowrap;transform:translateY(-50%) rotate(-4deg)}
-.hero-in{position:relative;text-align:center;max-width:940px}
-.eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;justify-content:center;gap:18px}
-.eyebrow::before,.eyebrow::after{content:"";height:1px;width:54px;background:var(--hair)}
-.hero-name{font-family:var(--script);font-weight:400;font-size:clamp(4.1rem,12vw,9.4rem);color:var(--gold);line-height:1.08;margin:20px 0 8px}
-.flourish{position:relative;width:min(320px,70vw);margin:0 auto 24px}
-.f-svg{width:100%}
-.f-svg path{fill:none;stroke:var(--gold);stroke-width:1.2;stroke-linecap:round}
-.f-d{position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold);transform:translate(-50%,-50%) rotate(45deg) scale(0);transition:transform .5s cubic-bezier(.34,1.56,.64,1) .6s}
-.hero-tag{font-style:italic;font-size:clamp(1.2rem,2.4vw,1.55rem);color:var(--ink-soft);max-width:36em;margin:0 auto}
-.hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:38px}
-.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;font-family:var(--sans);font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--ink-soft)}
-.scroll-cue .line{width:1px;height:52px;background:var(--hair);position:relative;overflow:hidden}
-.scroll-cue .line::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:var(--gold);animation:cue 2.2s cubic-bezier(.65,0,.35,1) infinite}
-@keyframes cue{to{top:110%}}
-.hero-side{position:absolute;right:36px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-family:var(--sans);font-size:10px;letter-spacing:.44em;text-transform:uppercase;color:var(--ink-soft)}
-.corner{position:absolute;width:34px;height:34px;border:0 solid var(--hair)}
-.corner.tl{top:96px;left:26px;border-top-width:1px;border-left-width:1px}
-.corner.tr{top:96px;right:26px;border-top-width:1px;border-right-width:1px}
-.corner.bl{bottom:26px;left:26px;border-bottom-width:1px;border-left-width:1px}
-.corner.br{bottom:26px;right:26px;border-bottom-width:1px;border-right-width:1px}
-
-/* hero entrance */
-.js .hero-name{clip-path:inset(-20% 100% -20% 0)}
-.js .eyebrow,.js .hero-tag,.js .hero-cta,.js .scroll-cue,.js .hero-side,.js .corner{opacity:0}
-.js .hero-tag,.js .hero-cta{transform:translateY(16px)}
-.js .f-svg path{stroke-dasharray:420;stroke-dashoffset:420}
-.js .hero-tag{transition:opacity .9s ease 1.25s,transform .9s cubic-bezier(.22,1,.36,1) 1.25s}
-.js .hero-cta{transition:opacity .9s ease 1.45s,transform .9s cubic-bezier(.22,1,.36,1) 1.45s}
-.js .scroll-cue{transition:opacity .9s ease 2s}
-.js .hero-side{transition:opacity 1.2s ease 1.9s}
-.js .corner{transition:opacity 1.2s ease .7s}
-body.is-ready .hero-name{clip-path:inset(-20% 0% -20% 0);transition:clip-path 1.7s cubic-bezier(.65,0,.25,1) .3s}
-body.is-ready .eyebrow{opacity:1;transition:opacity 1s ease .1s}
-body.is-ready .hero-tag,body.is-ready .hero-cta{opacity:1;transform:none}
-body.is-ready .scroll-cue,body.is-ready .hero-side,body.is-ready .corner{opacity:1}
-body.is-ready .f-svg path{animation:draw 1.5s ease .85s forwards}
-body.is-ready .f-d{transform:translate(-50%,-50%) rotate(45deg) scale(1)}
-@keyframes draw{to{stroke-dashoffset:0}}
-
-/* ============ Marquee ============ */
-.marquee{background:var(--green);overflow:hidden;padding:17px 0;border-top:1px solid rgba(201,167,92,.35);border-bottom:1px solid rgba(201,167,92,.35)}
-.m-track{display:flex;width:max-content;animation:mq 32s linear infinite}
-.marquee:hover .m-track{animation-play-state:paused}
-.m-group{display:flex;align-items:center;flex:none}
-.m-item{font-family:var(--sans);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:rgba(244,237,221,.85);padding:0 30px;white-space:nowrap}
-.m-d{width:6px;height:6px;background:var(--gold-2);transform:rotate(45deg);flex:none}
-@keyframes mq{to{transform:translateX(-50%)}}
-
-/* ============ Sections ============ */
-.sec{padding:120px 0}
-.wrap{width:min(1240px,92%);margin:0 auto}
-.kicker{font-family:var(--sans);font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;gap:16px;margin-bottom:20px}
-.kicker::before{content:"";width:44px;height:1px;background:var(--gold)}
-h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.15;color:var(--green)}
-h2 em{font-style:italic;font-weight:400;color:var(--gold-deep)}
-.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:70px}
-.sec-head p{max-width:52ch;color:var(--ink-soft);margin-top:14px}
-.sec-num{font-family:var(--serif);font-style:italic;font-size:clamp(3rem,6vw,4.6rem);line-height:.9;color:rgba(170,129,47,.28);flex:none}
-.divider{display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 0}
-.divider::before,.divider::after{content:"";width:80px;height:1px;background:var(--hair)}
-.divider span{width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
-
-/* reveal on scroll */
-.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease var(--d,0s),transform .9s cubic-bezier(.22,1,.36,1) var(--d,0s)}
-.js .reveal.in{opacity:1;transform:none}
-
-/* ============ Products ============ */
-.pgrid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:34px;row-gap:100px}
-.pr-1{grid-column:1/7}
-.pr-2{grid-column:8/13;margin-top:120px}
-.pr-3{grid-column:2/7}
-.pr-4{grid-column:8/13;margin-top:110px}
-.p-top{display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}
-.p-no{color:var(--gold-deep)}
-.cond{font-size:10px;letter-spacing:.22em;padding:5px 12px;border:1px solid var(--gold-deep);color:var(--gold-deep)}
-.cond.pre{border-style:dashed}
-.cond.new{background:var(--green);border-color:var(--green);color:var(--beige)}
-.frame{position:relative;border:1px solid var(--hair);background:rgba(251,247,236,.6);padding:clamp(22px,4vw,46px);display:grid;place-items:center;transition:border-color .4s,transform .5s cubic-bezier(.22,1,.36,1)}
-.frame::before,.frame::after{content:"";position:absolute;width:12px;height:12px;transition:width .4s,height .4s}
-.frame::before{top:-1px;left:-1px;border-top:1px solid var(--gold-deep);border-left:1px solid var(--gold-deep)}
-.frame::after{bottom:-1px;right:-1px;border-bottom:1px solid var(--gold-deep);border-right:1px solid var(--gold-deep)}
-.art{width:min(210px,58%);color:var(--green);transition:color .6s}
-.art svg{width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.art .g{stroke:var(--gold)}
-.art .gf{fill:var(--gold);stroke:none;opacity:.92}
-.art .hairln{stroke-width:1;opacity:.45}
-.product:hover .frame{border-color:var(--gold);transform:translateY(-6px)}
-.product:hover .frame::before,.product:hover .frame::after{width:28px;height:28px}
-.product:hover .art{color:var(--gold-deep)}
-.p-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:20px 0 8px}
-.p-row h3{font-family:var(--serif);font-weight:500;font-size:26px;color:var(--green)}
-.p-price{font-family:var(--sans);font-size:15px;letter-spacing:.14em;color:var(--gold-deep)}
-.p-info>p{color:var(--ink-soft);font-size:17px;line-height:1.6}
-
-/* sizes */
-.sizes-row{display:flex;align-items:center;gap:14px;margin:16px 0 4px;flex-wrap:wrap}
-.s-label{font-family:var(--sans);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
-.sizes{display:flex;gap:8px}
-.size{min-width:36px;height:30px;padding:0 7px;display:grid;place-items:center;border:1px solid rgba(21,52,38,.28);font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:var(--ink);cursor:pointer;transition:.3s;background:transparent;user-select:none}
-.size:hover{border-color:var(--gold-deep);color:var(--gold-deep)}
-.size.on{background:var(--green);border-color:var(--green);color:var(--beige)}
-
-.reserve{margin-top:18px;display:inline-flex;align-items:center;gap:9px;background:none;border:none;border-bottom:1px solid var(--gold);padding:2px 2px 7px;font-family:var(--sans);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--green);cursor:pointer;transition:color .3s,gap .3s}
-.reserve svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
-.reserve:hover{color:var(--gold-deep);gap:14px}
-.p-more{text-align:center;margin-top:96px}
-
-/* ============ About ============ */
-.about-grid{display:grid;grid-template-columns:7fr 5fr;gap:70px;align-items:start}
-.about-copy p{margin-bottom:22px}
-.lede::first-letter{font-size:4.5em;float:left;line-height:.8;padding:7px 14px 0 0;color:var(--gold-deep);font-weight:500}
-.sig{margin-top:36px;font-family:var(--script);font-size:40px;color:var(--gold-deep);line-height:1}
-.sig small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);margin-top:12px}
-.quote-card{position:relative;background:var(--green);color:#EFE6CC;padding:66px 42px 44px;transform:rotate(-2deg);box-shadow:0 30px 60px -30px rgba(0,48,28,.5)}
-.quote-card::before,.quote-card::after{content:"";position:absolute;width:18px;height:18px}
-.quote-card::before{top:10px;left:10px;border-top:1px solid var(--gold-2);border-left:1px solid var(--gold-2)}
-.quote-card::after{bottom:10px;right:10px;border-bottom:1px solid var(--gold-2);border-right:1px solid var(--gold-2)}
-.q{font-style:italic;font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.55;position:relative}
-.q::before{content:"\201C";position:absolute;top:-14px;left:-6px;font-size:72px;line-height:1;font-style:normal;color:var(--gold-2);opacity:.85}
-.q em{color:var(--gold-2)}
-.q-attr{margin-top:24px;font-family:var(--sans);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:rgba(244,237,221,.55)}
-.values{margin-top:60px;border-top:1px solid var(--hair)}
-.value{display:flex;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--hair)}
-.value b{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--green);min-width:140px;flex:none}
-.value span{color:var(--ink-soft);font-size:16.5px}
-
-/* ============ Contact ============ */
-.contact-grid{display:grid;grid-template-columns:5fr 7fr;gap:76px;align-items:start}
-.contact-grid .blurb{color:var(--ink-soft);margin-bottom:34px}
-.c-row{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--hair)}
-.c-row svg{width:18px;height:18px;fill:none;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:5px}
-.c-row b{display:block;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
-.c-row p{color:var(--ink-soft);font-size:16.5px}
-.steps-card{border:1px solid var(--hair);background:rgba(251,247,236,.6);padding:clamp(28px,4vw,44px)}
-.steps-head{font-family:var(--sans);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:8px}
-.step{display:flex;gap:22px;padding:22px 0;border-bottom:1px solid var(--hair)}
-.step:last-of-type{border-bottom:0}
-.step .n{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.1;color:var(--gold);flex:none;width:52px}
-.step b{display:block;font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:6px}
-.step p{color:var(--ink-soft);font-size:16.5px}
-.steps-card .btn{margin-top:28px}
-
-/* ============ Footer ============ */
-footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
-.foot-name{font-family:var(--script);font-size:clamp(3rem,7vw,5rem);color:var(--gold-2);text-align:center;line-height:1}
-.foot-tag{text-align:center;font-family:var(--sans);font-size:10px;letter-spacing:.44em;text-transform:uppercase;color:rgba(244,237,221,.5);margin-top:16px}
-.foot-hr{border:0;height:1px;background:rgba(244,237,221,.16);width:min(1240px,92%);margin:56px auto}
-.foot-grid{width:min(1240px,92%);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:52px}
-.f-head{font-family:var(--sans);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2);margin-bottom:20px}
-.f-links a{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,237,221,.75);text-decoration:none;padding:7px 0;transition:color .3s,transform .3s;width:max-content}
-.f-links a:hover{color:var(--gold-2);transform:translateX(5px)}
-.f-visit p{color:rgba(244,237,221,.72);font-size:16.5px;line-height:1.8}
-.f-hello p{color:rgba(244,237,221,.72);font-size:16.5px;max-width:38ch}
-.socials{display:flex;gap:10px;margin-top:20px}
-.socials a{width:38px;height:38px;border:1px solid rgba(244,237,221,.25);display:grid;place-items:center;color:rgba(244,237,221,.8);transition:.3s}
-.socials a svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.socials a:hover{border-color:var(--gold-2);color:var(--gold-2);transform:translateY(-3px)}
-.foot-bottom{width:min(1240px,92%);margin:64px auto 0;padding-top:26px;border-top:1px solid rgba(244,237,221,.14);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-family:var(--sans);font-size:11px;letter-spacing:.18em;color:rgba(244,237,221,.45)}
-
-/* ============ Mobile menu ============ */
-.mobile-menu{position:fixed;inset:0;background:var(--beige);z-index:80;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .4s}
-.mobile-menu.open{opacity:1;pointer-events:auto}
-.mm-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:.44em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:26px}
-.mm-link{font-family:var(--script);font-size:2.9rem;color:var(--green);text-decoration:none;line-height:1.6;transition:color .3s}
-.mm-link:hover{color:var(--gold-deep)}
-.mm-close{position:absolute;top:20px;right:20px}
-.js .mm-link{opacity:0;transform:translateY(16px);transition:.5s cubic-bezier(.22,1,.36,1)}
-.js .open .mm-link{opacity:1;transform:none}
-.js .open .mm-link:nth-child(3){transition-delay:.08s}
-.js .open .mm-link:nth-child(4){transition-delay:.16s}
-.js .open .mm-link:nth-child(5){transition-delay:.24s}
-.js .open .mm-link:nth-child(6){transition-delay:.32s}
-
-/* ============ Toasts ============ */
-#toasts{position:fixed;bottom:26px;right:26px;z-index:100;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
-.toast{display:flex;align-items:center;gap:12px;background:var(--green);color:var(--beige);border-left:2px solid var(--gold);padding:15px 22px;font-family:var(--sans);font-size:13px;letter-spacing:.05em;max-width:min(370px,86vw);opacity:0;transform:translateY(12px);transition:.45s cubic-bezier(.22,1,.36,1);box-shadow:0 18px 40px -18px rgba(0,48,28,.5)}
-.toast.show{opacity:1;transform:none}
-.toast svg{width:15px;height:15px;fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-
-/* ============ Responsive ============ */
-@media(max-width:1100px){
-  .about-grid{grid-template-columns:1fr;gap:60px}
-  .quote-card{max-width:480px}
-}
-@media(max-width:900px){
-  .sec{padding:90px 0}
-  .sec-head{flex-direction:column;align-items:flex-start;gap:8px}
-  .pgrid{row-gap:64px}
-  .pr-1,.pr-2,.pr-3,.pr-4{grid-column:1/-1;margin-top:0}
-  .contact-grid{grid-template-columns:1fr;gap:56px}
-  .foot-grid{grid-template-columns:1fr;gap:44px}
-  .hero-side{display:none}
-}
-@media(max-width:860px){
-  nav,.visit-btn{display:none}
-  .burger{display:grid}
-  #header{height:70px}
-  html{scroll-padding-top:82px}
-}
-@media(max-width:600px){
-  #toasts{left:16px;right:16px;align-items:stretch}
-  .hero-cta .btn{width:100%;justify-content:center}
-  .corner.tl,.corner.tr{top:82px}
-}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .js .reveal,.js .hero-tag,.js .hero-cta,.js .eyebrow,.js .scroll-cue,.js .hero-side,.js .corner,.js .mm-link{opacity:1!important;transform:none!important}
-  .js .hero-name{clip-path:none!important}
-  .js .f-svg path{stroke-dashoffset:0!important}
-  html{scroll-behavior:auto}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&family=Baloo+2:wght@600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -317,17 +22,24 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
 <!-- ============ Header ============ -->
 <header id="header">
   <div class="header-in">
-    <a class="logo" href="#home">Selena ph</a>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">
+        Selena ph
+        <span class="x">×</span>
+        <span class="sulit">Sulit Dito MNL</span>
+      </span>
+    </a>
     <nav>
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#products">Products</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="sale.html">Sale</a>
+      <a class="nav-link" href="products.html">Products</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </nav>
     <div class="h-right">
-      <a class="btn btn-ghost visit-btn" href="#contact">Visit us</a>
+      <a class="btn btn-ghost visit-btn" href="contact.html">Order here</a>
       <button class="icon-btn" id="pickBtn" aria-label="Your picks">
-        <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         <span id="pickCount">0</span>
       </button>
       <button class="icon-btn burger" id="burger" aria-label="Open menu">
@@ -336,11 +48,11 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
 
       <div class="pick-panel" id="pickPanel">
         <div class="pp-head"><span>Your Picks</span>
-          <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
         </div>
         <div class="pp-list" id="ppList"><p class="pp-empty">No picks yet — the racks await.</p></div>
         <div class="pp-foot"><span>Total — <b id="ppTotal">₱0</b></span><button id="ppClear">Clear all</button></div>
-        <p class="pp-hint">Message us your picks on Facebook or text our number to reserve.</p>
+        <p class="pp-hint">Send your picks to our <a href="contact.html">order page</a> or text us — half payment (50%) secures your order.</p>
       </div>
     </div>
   </div>
@@ -351,11 +63,12 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
   <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu">
     <svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
   </button>
-  <span class="mm-eyebrow">Selena ph</span>
-  <a class="mm-link" href="#home">Home</a>
-  <a class="mm-link" href="#products">Products</a>
-  <a class="mm-link" href="#about">About</a>
-  <a class="mm-link" href="#contact">Contact</a>
+  <span class="mm-eyebrow">Selena ph × Sulit Dito MNL</span>
+  <a class="mm-link" href="index.html">Home</a>
+  <a class="mm-link" href="sale.html">Sale</a>
+  <a class="mm-link" href="products.html">Products</a>
+  <a class="mm-link" href="about.html">About</a>
+  <a class="mm-link" href="contact.html">Contact</a>
 </div>
 
 <!-- ============ Hero / Home ============ -->
@@ -363,20 +76,24 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
   <div class="hero-mark" id="heroMark" aria-hidden="true">Selena</div>
   <span class="corner tl"></span><span class="corner tr"></span>
   <span class="corner bl"></span><span class="corner br"></span>
-  <span class="hero-side">Dresses · New &amp; Pre-Loved · PH</span>
+  <span class="hero-side">Dresses · Finds · Sale Steals · PH</span>
 
   <div class="hero-in">
-    <p class="eyebrow">Dresses for Women — Brand New &amp; Pre-Loved</p>
-    <h1 class="hero-name">Selena ph</h1>
+    <p class="eyebrow">A Collaboration — Two Boutiques, One Home</p>
+    <h1 class="hero-name">
+      Selena ph
+      <span class="x">×</span>
+      <span class="sulit">Sulit Dito MNL</span>
+    </h1>
     <div class="flourish" aria-hidden="true">
       <svg class="f-svg" viewBox="0 0 320 26"><path d="M2 15 C 58 3, 108 25, 160 13 C 212 1, 262 23, 318 11"/></svg>
       <span class="f-d"></span>
     </div>
-    <p class="hero-tag">A curated boutique of women's dresses — fresh brand-new pieces and beautifully pre-loved finds — in sizes Small to Extra Large, priced with love.</p>
+    <p class="hero-tag">Dresses for women — brand new &amp; pre-loved — hand in hand with brand new finds and super sale steals, all in one cozy corner of the internet.</p>
     <div class="hero-cta">
-      <a class="btn btn-solid" href="#products"><span>Browse the Racks</span>
+      <a class="btn btn-solid" href="products.html"><span>Browse the Racks</span>
         <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      <a class="btn btn-ghost" href="#about"><span>Our Story</span></a>
+      <a class="btn btn-ghost" href="sale.html"><span>Today's Sale Steals</span></a>
     </div>
   </div>
 
@@ -387,253 +104,200 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
 <div class="marquee" aria-hidden="true">
   <div class="m-track">
     <div class="m-group">
-      <span class="m-item">Brand-new arrivals</span><span class="m-d"></span>
-      <span class="m-item">Pre-loved finds</span><span class="m-d"></span>
+      <span class="m-item">Dresses — New &amp; Pre-Loved</span><span class="m-d"></span>
+      <span class="m-item">Brand New Finds</span><span class="m-d"></span>
+      <span class="m-item">Super Sale Steals</span><span class="m-d"></span>
       <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
-      <span class="m-item">Dresses only</span><span class="m-d"></span>
-      <span class="m-item">Selena ph</span><span class="m-d"></span>
-      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+      <span class="m-item">Same-day ship-out · 5PM cut-off</span><span class="m-d"></span>
+      <span class="m-item"><em>sulit na sulit!</em></span><span class="m-d"></span>
     </div>
     <div class="m-group">
-      <span class="m-item">Brand-new arrivals</span><span class="m-d"></span>
-      <span class="m-item">Pre-loved finds</span><span class="m-d"></span>
+      <span class="m-item">Dresses — New &amp; Pre-Loved</span><span class="m-d"></span>
+      <span class="m-item">Brand New Finds</span><span class="m-d"></span>
+      <span class="m-item">Super Sale Steals</span><span class="m-d"></span>
       <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
-      <span class="m-item">Dresses only</span><span class="m-d"></span>
-      <span class="m-item">Selena ph</span><span class="m-d"></span>
-      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+      <span class="m-item">Same-day ship-out · 5PM cut-off</span><span class="m-d"></span>
+      <span class="m-item"><em>sulit na sulit!</em></span><span class="m-d"></span>
     </div>
   </div>
 </div>
 
-<!-- ============ Products ============ -->
-<section class="sec" id="products">
+<!-- ============ 3-line Options Block ============ -->
+<section class="options-block sec" style="padding-top:120px">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal" style="margin-bottom:60px">
       <div>
-        <p class="kicker">01 — The Racks</p>
-        <h2>New arrivals &amp; <em>pre-loved gems</em>.</h2>
-        <p>Every dress is hand-picked — brand-new pieces straight from suppliers, and pre-loved finds inspected, laundered and ready for their next chapter.</p>
+        <p class="kicker">— Three ways to shop</p>
+        <h2>One collaboration, <em>three little worlds</em>.</h2>
+        <p>Pick your lane — or hop between all three. Dresses, finds, and super sale steals all live under one roof now.</p>
       </div>
       <span class="sec-num">01</span>
     </div>
 
-    <div class="pgrid">
+    <div class="options-3">
+      <a class="opt-card reveal" href="products.html" style="--ac:var(--gold);--d:0s;text-decoration:none">
+        <div class="opt-num">01</div>
+        <span class="opt-icon">👗</span>
+        <div class="hand-title">The Dresses</div>
+        <h3>By Selena ph</h3>
+        <p>Brand-new and pre-loved dresses in sizes S–XL. Hand-picked, freshly laundered, ready for their next chapter.</p>
+        <span class="opt-link">Browse the racks →</span>
+      </a>
 
-      <article class="product pr-1 reveal" style="--d:0s">
-        <div class="p-top"><span class="p-no">Nº 01</span><span class="cond new">Brand New</span></div>
-        <div class="frame"><div class="art">
-          <svg viewBox="0 0 200 200">
-            <path d="M86 30 v24 M114 30 v24"/>
-            <path d="M86 54 L114 54 L121 96 L79 96 Z"/>
-            <rect x="79" y="88" width="42" height="8" class="g"/>
-            <path d="M79 96 C 68 128 60 152 56 168 L144 168 C 140 152 132 128 121 96"/>
-            <path d="M60 156 L140 156" class="hairln"/>
-            <line x1="50" y1="178" x2="150" y2="178" class="hairln"/>
-          </svg>
-        </div></div>
-        <div class="p-info">
-          <div class="p-row"><h3>The Linen Midi</h3><span class="p-price">₱1,250</span></div>
-          <p>Breathable linen in warm sand, cut with an A-line that flatters every frame. Straight from the brand-new rack, tags on.</p>
-          <div class="sizes-row">
-            <span class="s-label">Sizes</span>
-            <div class="sizes">
-              <span class="size" title="Small">S</span>
-              <span class="size on" title="Medium">M</span>
-              <span class="size" title="Large">L</span>
-              <span class="size" title="Extra Large">XL</span>
-            </div>
-          </div>
-          <button class="reserve" data-name="The Linen Midi" data-price="1250">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
-        </div>
-      </article>
+      <a class="opt-card reveal" href="products.html" style="--ac:var(--teal);--d:.1s;text-decoration:none">
+        <div class="opt-num">02</div>
+        <span class="opt-icon">🛍️</span>
+        <div class="hand-title">The Finds</div>
+        <h3>By Sulit Dito MNL</h3>
+        <p>Brand-new watches, earbuds, totes, and everyday carry essentials — all checked or tested before shipping.</p>
+        <span class="opt-link">Shop the finds →</span>
+      </a>
 
-      <article class="product pr-2 reveal" style="--d:.12s">
-        <div class="p-top"><span class="p-no">Nº 02</span><span class="cond pre">Pre-Loved</span></div>
-        <div class="frame"><div class="art">
-          <svg viewBox="0 0 200 200">
-            <path d="M100 30 v-5 q0 -6 6 -6" class="hairln"/>
-            <path d="M64 44 L100 30 L136 44" class="hairln"/>
-            <path d="M84 46 C 80 64 78 82 78 98 L122 98 C 122 82 120 64 116 46"/>
-            <path d="M84 46 L100 86 L116 46"/>
-            <path d="M92 50 L108 84" class="hairln"/>
-            <path d="M78 98 C 68 128 60 150 56 166 L144 166 C 140 150 132 128 122 98"/>
-            <rect x="78" y="94" width="44" height="7" class="g"/>
-            <rect x="96.5" y="94" width="7" height="7" class="gf" transform="rotate(45 100 97.5)"/>
-            <line x1="52" y1="176" x2="148" y2="176" class="hairln"/>
-          </svg>
-        </div></div>
-        <div class="p-info">
-          <div class="p-row"><h3>The Wrap Dress</h3><span class="p-price">₱780</span></div>
-          <p>A floral wrap in soft viscose, gently worn once or twice and freshly laundered — quality that outlasts any trend.</p>
-          <div class="sizes-row">
-            <span class="s-label">Sizes</span>
-            <div class="sizes">
-              <span class="size" title="Small">S</span>
-              <span class="size on" title="Medium">M</span>
-              <span class="size" title="Large">L</span>
-            </div>
-          </div>
-          <button class="reserve" data-name="The Wrap Dress" data-price="780">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
-        </div>
-      </article>
-
-      <article class="product pr-3 reveal" style="--d:0s">
-        <div class="p-top"><span class="p-no">Nº 03</span><span class="cond new">Brand New</span></div>
-        <div class="frame"><div class="art">
-          <svg viewBox="0 0 200 200">
-            <path d="M87 30 L89 54 M113 30 L111 54"/>
-            <path d="M89 54 C 94 64 106 64 111 54"/>
-            <path d="M92 60 C 96 66 104 66 108 60" class="hairln"/>
-            <path d="M89 54 L84 168 L116 168 L111 54"/>
-            <path d="M100 118 L100 166" class="hairln"/>
-            <circle cx="88" cy="120" r="1.7" class="gf"/>
-            <circle cx="112" cy="98" r="1.7" class="gf"/>
-            <circle cx="93" cy="90" r="1.4" class="gf"/>
-            <line x1="52" y1="178" x2="148" y2="178" class="hairln"/>
-          </svg>
-        </div></div>
-        <div class="p-info">
-          <div class="p-row"><h3>The Satin Slip</h3><span class="p-price">₱1,450</span></div>
-          <p>Bias-cut satin with a cowl neck — made for evenings and occasions. Brand new with tags, still in its wrapper.</p>
-          <div class="sizes-row">
-            <span class="s-label">Sizes</span>
-            <div class="sizes">
-              <span class="size" title="Small">S</span>
-              <span class="size on" title="Medium">M</span>
-              <span class="size" title="Large">L</span>
-              <span class="size" title="Extra Large">XL</span>
-            </div>
-          </div>
-          <button class="reserve" data-name="The Satin Slip" data-price="1450">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
-        </div>
-      </article>
-
-      <article class="product pr-4 reveal" style="--d:.12s">
-        <div class="p-top"><span class="p-no">Nº 04</span><span class="cond pre">Pre-Loved</span></div>
-        <div class="frame"><div class="art">
-          <svg viewBox="0 0 200 200">
-            <path d="M78 58 C 90 68 110 68 122 58"/>
-            <path d="M78 60 C 64 60 58 74 64 86 C 68 92 76 90 78 82"/>
-            <path d="M122 60 C 136 60 142 74 136 86 C 132 92 124 90 122 82"/>
-            <path d="M78 58 C 76 74 76 88 78 100 L122 100 C 124 88 124 74 122 58"/>
-            <path d="M78 100 C 64 132 56 154 52 172 L148 172 C 144 154 136 132 122 100"/>
-            <path d="M92 110 C 88 136 84 152 82 166" class="hairln"/>
-            <path d="M108 110 C 112 136 116 152 118 166" class="hairln"/>
-            <rect x="97" y="77" width="6" height="6" class="gf" transform="rotate(45 100 80)"/>
-            <line x1="50" y1="182" x2="150" y2="182" class="hairln"/>
-          </svg>
-        </div></div>
-        <div class="p-info">
-          <div class="p-row"><h3>The Garden Maxi</h3><span class="p-price">₱690</span></div>
-          <p>An off-shoulder maxi in dusty rose — one careful previous owner and many summers still ahead of it.</p>
-          <div class="sizes-row">
-            <span class="s-label">Sizes</span>
-            <div class="sizes">
-              <span class="size on" title="Medium">M</span>
-              <span class="size" title="Large">L</span>
-              <span class="size" title="Extra Large">XL</span>
-            </div>
-          </div>
-          <button class="reserve" data-name="The Garden Maxi" data-price="690">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
-        </div>
-      </article>
-
-    </div>
-
-    <div class="p-more reveal">
-      <a class="btn btn-ghost" href="#contact"><span>Message us for the full rack</span></a>
+      <a class="opt-card reveal" href="sale.html" style="--ac:var(--orange);--d:.2s;text-decoration:none">
+        <div class="opt-num">03</div>
+        <span class="opt-icon">🏷️</span>
+        <div class="hand-title">Super Sale!</div>
+        <h3>Limited Steals</h3>
+        <p>First-come, first-served super sale steals from both boutiques. Once they're gone, they're gone — so move fast.</p>
+        <span class="opt-link">Catch the steals →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="divider" aria-hidden="true"><span></span></div>
-
-<!-- ============ About ============ -->
-<section class="sec" id="about">
+<!-- ============ Ongoing Sale strip (below the fold) ============ -->
+<section class="sale-strip">
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
-        <p class="kicker">02 — About Selena ph</p>
-        <h2>Every dress deserves <em>another spin</em>.</h2>
+        <p class="kicker orange">— On sale now</p>
+        <h2>Today's <span class="hand">super sulit</span> steals.</h2>
+        <p>A peek at the deals running right now — from both Selena ph and Sulit Dito MNL. Tap any piece to see the full sale rack.</p>
       </div>
-      <span class="sec-num">02</span>
+      <span class="sec-num" style="color:rgba(242,110,28,.28)">02</span>
     </div>
 
-    <div class="about-grid">
-      <div class="about-copy reveal" style="--d:.05s">
-        <p class="lede">Selena ph began with a simple frustration: gorgeous dresses hanging unworn in closets while other women searched everywhere for exactly that piece. So we built the bridge. Our racks carry two kinds of dresses — brand-new pieces chosen from trusted suppliers, and pre-loved gems we inspect, launder and photograph honestly, one by one.</p>
-        <p>Nothing here is fast fashion filler. Whether it arrives with tags or with a history, every dress leaves us ready for a wedding, a date, a first day of work — whatever moment you're dressing for. And in sizes Small through Extra Large, there's a fit waiting for every body.</p>
-        <p class="sig">Selena<small>Founder &amp; Curator</small></p>
-      </div>
+    <div class="sale-grid">
 
-      <div class="reveal" style="--d:.15s">
-        <figure class="quote-card">
-          <blockquote class="q">A dress should never hang unworn — we find them <em>new homes</em>, or <em>new beginnings</em>.</blockquote>
-          <figcaption class="q-attr">From the Selena ph journal</figcaption>
-        </figure>
-        <div class="values">
-          <div class="value"><b>Brand new</b><span>Fresh pieces with tags on, straight from our suppliers.</span></div>
-          <div class="value"><b>Pre-loved</b><span>Carefully inspected, laundered and honestly described.</span></div>
-          <div class="value"><b>Sizes S–XL</b><span>Because every woman deserves her perfect fit.</span></div>
+      <article class="sale-card reveal" style="--d:0s">
+        <span class="sale-tag">-30%</span>
+        <div class="sale-art">
+          <svg viewBox="0 0 100 100">
+            <rect x="42" y="11" width="15" height="21" rx="4"/>
+            <rect x="42" y="68" width="15" height="21" rx="4"/>
+            <circle cx="50" cy="50" r="18"/>
+            <circle cx="50" cy="50" r="13" class="gfill"/>
+            <path d="M50 41 V50 L57 54"/>
+            <circle cx="50" cy="50" r="1.4" class="gf"/>
+          </svg>
         </div>
-      </div>
+        <span class="sale-brand">Sulit Dito MNL</span>
+        <h4>Mesh Watch</h4>
+        <div class="sale-price"><span class="was">₱499</span>₱350</div>
+      </article>
+
+      <article class="sale-card reveal" style="--d:.08s">
+        <span class="sale-tag">-33%</span>
+        <div class="sale-art">
+          <svg viewBox="0 0 100 100">
+            <path d="M23 46 L14 42"/><path d="M77 46 L86 42"/>
+            <rect x="23" y="42" width="23" height="17" rx="7" class="gfill"/>
+            <rect x="54" y="42" width="23" height="17" rx="7" class="gfill"/>
+            <path d="M46 46 q4 -4 8 0"/>
+          </svg>
+        </div>
+        <span class="sale-brand">Sulit Dito MNL</span>
+        <h4>Sunshield Shades</h4>
+        <div class="sale-price"><span class="was">₱299</span>₱199</div>
+      </article>
+
+      <article class="sale-card reveal" style="--d:.16s">
+        <span class="sale-tag">Pre-Loved</span>
+        <div class="sale-art">
+          <svg viewBox="0 0 100 100">
+            <path d="M50 15 v-2 q0 -3 3 -3"/>
+            <path d="M32 22 L50 15 L68 22"/>
+            <path d="M42 23 C 40 32 39 41 39 49 L61 49 C 61 41 60 32 58 23"/>
+            <path d="M42 23 L50 43 L58 23"/>
+            <rect x="39" y="47" width="22" height="3.5" class="g"/>
+            <path d="M39 49 C 34 64 30 75 28 83 L72 83 C 70 75 66 64 61 49"/>
+          </svg>
+        </div>
+        <span class="sale-brand">Selena ph</span>
+        <h4>Wrap Dress</h4>
+        <div class="sale-price">₱780</div>
+      </article>
+
+      <article class="sale-card reveal" style="--d:.24s">
+        <span class="sale-tag">Pre-Loved</span>
+        <div class="sale-art">
+          <svg viewBox="0 0 100 100">
+            <path d="M39 29 C 45 34 55 34 61 29"/>
+            <path d="M39 30 C 32 30 29 37 32 43 C 34 46 38 45 39 41"/>
+            <path d="M61 30 C 68 30 71 37 68 43 C 66 46 62 45 61 41"/>
+            <path d="M39 29 C 38 37 38 44 39 50 L61 50 C 62 44 62 37 61 29"/>
+            <path d="M39 50 C 32 66 28 77 26 86 L74 86 C 72 77 68 66 61 50"/>
+            <rect x="48" y="38" width="3" height="3" class="gf" transform="rotate(45 50 40)"/>
+          </svg>
+        </div>
+        <span class="sale-brand">Selena ph</span>
+        <h4>Garden Maxi</h4>
+        <div class="sale-price">₱690</div>
+      </article>
+
+    </div>
+
+    <div class="sale-cta reveal">
+      <a class="btn btn-orange" href="sale.html"><span>See all sale steals</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
 
-<div class="divider" aria-hidden="true"><span></span></div>
-
-<!-- ============ Contact ============ -->
-<section class="sec" id="contact" style="padding-bottom:140px">
+<!-- ============ How to Order teaser ============ -->
+<section class="sec">
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
-        <p class="kicker">03 — Contact</p>
-        <h2>Come say <em>hello</em>.</h2>
+        <p class="kicker">03 — How to order</p>
+        <h2>Three simple <em>steps</em>.</h2>
+        <p>Whether it's a dress from Selena ph or a find from Sulit Dito MNL, ordering works the same easy way.</p>
       </div>
       <span class="sec-num">03</span>
     </div>
 
     <div class="contact-grid">
       <div class="reveal" style="--d:.05s">
-        <p class="blurb">Questions on a dress, a size, or a reservation? Reach us any of these ways — we reply fast.</p>
+        <p class="blurb">A quick look at our ordering flow — head over to the Contact page for full details, courier options, and shop rules.</p>
         <div class="c-row">
-          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div><b>Visit</b><p>Shop address here, City, Philippines</p></div>
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
+          <div><b>Step 01 — Pick</b><p>Browse dresses &amp; finds, choose your piece and size or color.</p></div>
         </div>
         <div class="c-row">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <div><b>Hours</b><p>Monday – Saturday · 10am – 7pm</p></div>
-        </div>
-        <div class="c-row">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <div><b>Call / Text</b><p>0917 123 4567</p></div>
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div><b>Step 02 — Message</b><p>Send us the item name &amp; details on Facebook or text.</p></div>
         </div>
         <div class="c-row" style="border-bottom:0">
-          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <div><b>Message</b><p>Facebook &amp; Instagram — @selenaph</p></div>
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <div><b>Step 03 — Pay &amp; receive</b><p>Half payment secures, ship-out same day (cut-off 5PM).</p></div>
         </div>
       </div>
 
       <div class="steps-card reveal" style="--d:.15s">
-        <p class="steps-head">How to order</p>
+        <p class="steps-head">Quick reminder</p>
         <div class="step">
-          <span class="n">01</span>
-          <div><b>Pick your dress</b><p>Browse the racks and choose your piece and size — S, M, L or XL.</p></div>
+          <span class="n">½</span>
+          <div><b>Half payment policy</b><p>A 50% downpayment secures your order — this protects everyone from cancellations and items lost in transit.</p></div>
         </div>
         <div class="step">
-          <span class="n">02</span>
-          <div><b>Send a message</b><p>Text or DM us the dress name — we'll confirm it's still available.</p></div>
+          <span class="n">⏰</span>
+          <div><b>Same-day cut-off</b><p>Payments confirmed before 5PM ship out the same day. Manila &amp; nearby provinces: 1–2 days delivery.</p></div>
         </div>
         <div class="step">
-          <span class="n">03</span>
-          <div><b>Reserve &amp; collect</b><p>Pick up in-store, or we'll ship it straight to your door.</p></div>
+          <span class="n">✓</span>
+          <div><b>Tested &amp; proven</b><p>All watches &amp; electronic accessories are tested before shipping, with photo or video proof sent on chat.</p></div>
         </div>
-        <a class="btn btn-solid" href="tel:+639171234567"><span>Call 0917 123 4567</span>
+        <a class="btn btn-solid" href="contact.html"><span>See full order details</span>
           <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
       </div>
     </div>
@@ -642,41 +306,46 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
 
 <!-- ============ Footer ============ -->
 <footer>
-  <p class="foot-name">Selena ph</p>
-  <p class="foot-tag">Dresses for women · Brand new &amp; pre-loved</p>
+  <p class="foot-name">Selena ph <span class="x">×</span> <span class="sulit">Sulit Dito MNL</span></p>
+  <p class="foot-tag">Dresses · Brand new finds · Super sale steals</p>
   <hr class="foot-hr">
   <div class="foot-grid">
     <div>
       <p class="f-head">Browse</p>
       <div class="f-links">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="sale.html">Sale</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="f-visit">
       <p class="f-head">Visit</p>
-      <p>Shop address here, City, Philippines<br>Monday – Saturday · 10am – 7pm<br>Call / Text — 0917 123 4567</p>
+      <p>Holy Spirit, Quezon City, Philippines<br>Monday – Saturday · 10am – 7pm<br>Call / Text — 0969 450 7597<br>Ship-out cut-off — 5PM daily</p>
     </div>
     <div class="f-hello">
       <p class="f-head">Say Hello</p>
-      <p>New dresses drop on our page every week — follow along and message us anytime to reserve.</p>
+      <p>Message us on Facebook or text our number to reserve a dress or order a find — we reply fast and ship faster.</p>
       <div class="socials">
-        <a href="#" aria-label="Instagram" onclick="return false;">
-          <svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-        <a href="#" aria-label="Facebook" onclick="return false;">
+        <a href="https://www.facebook.com/sulitditoManila" target="_blank" rel="noopener" aria-label="Facebook">
           <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-        <a href="tel:+639171234567" aria-label="Call us">
+        <a href="tel:+639694507597" aria-label="Call or text">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://maps.google.com/?q=Holy+Spirit,+Quezon+City,+Philippines+1127" target="_blank" rel="noopener" aria-label="Map">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></a>
       </div>
     </div>
   </div>
   <div class="foot-bottom">
-    <span>© 2025 Selena ph — Curated with love.</span>
-    <span>Sizes S · M · L · XL</span>
+    <span>© 2025 Selena ph × Sulit Dito MNL — Curated with love.</span>
+    <span>Holy Spirit, QC · Ships nationwide</span>
   </div>
 </footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
 
 <div id="toasts" aria-live="polite"></div>
 
@@ -688,13 +357,15 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
   /* entrance */
   const ready = ()=> document.body.classList.add('is-ready');
   window.addEventListener('load', ready);
-  setTimeout(ready, 1600); // fallback
+  setTimeout(ready, 1600);
 
-  /* header state, golden thread, parallax */
-  const header = $('#header'), fill = $('#threadFill'), diamond = $('#threadDiamond'), mark = $('#heroMark');
+  /* header state, golden thread, parallax, back-to-top */
+  const header = $('#header'), fill = $('#threadFill'), diamond = $('#threadDiamond'),
+        mark = $('#heroMark'), toTop = $('#toTop');
   let ticking = false;
   function onScroll(){
     header.classList.toggle('scrolled', scrollY > 10);
+    toTop.classList.toggle('show', scrollY > 600);
     const max = document.documentElement.scrollHeight - innerHeight;
     const p = max > 0 ? Math.min(1, scrollY / max) : 0;
     fill.style.height = (p * 100) + '%';
@@ -704,18 +375,7 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
   }
   addEventListener('scroll', ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
   onScroll();
-
-  /* scrollspy */
-  const links = $$('.nav-link');
-  const spy = new IntersectionObserver(es=>{
-    es.forEach(e=>{
-      if(e.isIntersecting) links.forEach(a=> a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
-    });
-  }, {rootMargin:'-40% 0px -55% 0px'});
-  ['home','products','about','contact'].forEach(id=>{
-    const el = document.getElementById(id);
-    if(el) spy.observe(el);
-  });
+  toTop.addEventListener('click', ()=> scrollTo({top:0, behavior:'smooth'}));
 
   /* reveal on scroll */
   const ro = new IntersectionObserver(es=> es.forEach(e=>{
@@ -733,8 +393,10 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
     setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=> t.remove(), 500); }, 3400);
   }
 
-  /* picks (mini wishlist) */
-  const picks = [], panel = $('#pickPanel'), pickBtn = $('#pickBtn'), count = $('#pickCount');
+  /* picks (shared via localStorage across pages) */
+  const picks = JSON.parse(localStorage.getItem('picks') || '[]');
+  const panel = $('#pickPanel'), pickBtn = $('#pickBtn'), count = $('#pickCount');
+  function savePicks(){ localStorage.setItem('picks', JSON.stringify(picks)); }
   function renderPicks(){
     const list = $('#ppList');
     count.textContent = picks.length;
@@ -745,8 +407,9 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
       return;
     }
     list.innerHTML = picks.map((it,i)=>
-      '<div class="pp-item"><span>' + it.name + '</span><span class="pp-price">₱' + it.price.toLocaleString() +
-      '</span><button class="pp-x" data-i="' + i + '" aria-label="Remove">' +
+      '<div class="pp-item"><span>' + it.name + '<span class="brand-tag">' + (it.brand||'Selena ph') + '</span></span>' +
+      '<span class="pp-price">₱' + it.price.toLocaleString() + '</span>' +
+      '<button class="pp-x" data-i="' + i + '" aria-label="Remove">' +
       '<svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>'
     ).join('');
     $('#ppTotal').textContent = '₱' + picks.reduce((s,i)=> s + i.price, 0).toLocaleString();
@@ -754,18 +417,18 @@ footer{background:#00301C;color:var(--beige);padding:96px 0 40px}
   $$('.reserve').forEach(b=> b.addEventListener('click', ()=>{
     const sizesEl = b.closest('.p-info').querySelector('.sizes');
     const chosen = sizesEl ? sizesEl.querySelector('.size.on') : null;
-    const label = b.dataset.name + (chosen ? ' — size ' + chosen.textContent : '');
-    picks.push({name: label, price: +b.dataset.price});
-    renderPicks();
+    const label = b.dataset.name + (chosen ? ' — ' + chosen.textContent : '');
+    picks.push({name: label, price: +b.dataset.price, brand: b.dataset.brand || 'Selena ph'});
+    savePicks(); renderPicks();
     count.classList.remove('pop'); void count.offsetWidth; count.classList.add('pop');
     toast(label + ' added to your picks.');
   }));
   $('#ppList').addEventListener('click', e=>{
     const x = e.target.closest('.pp-x');
-    if(x){ picks.splice(+x.dataset.i, 1); renderPicks(); }
+    if(x){ picks.splice(+x.dataset.i, 1); savePicks(); renderPicks(); }
   });
   $('#ppClear').addEventListener('click', ()=>{
-    if(picks.length){ picks.length = 0; renderPicks(); toast('Your picks have been cleared.'); }
+    if(picks.length){ picks.length = 0; savePicks(); renderPicks(); toast('Your picks have been cleared.'); }
   });
   pickBtn.addEventListener('click', e=>{ e.stopPropagation(); panel.classList.toggle('open'); });
   document.addEventListener('click', e=>{
