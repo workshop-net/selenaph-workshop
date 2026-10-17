@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selena ph — About · The Atelier</title>
+<meta name="description" content="Selena ph — The story behind the boutique. Every dress deserves another spin.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="selena.css">
+</head>
+<body>
+
+<div class="thread" aria-hidden="true">
+  <div id="threadFill"></div>
+  <div id="threadDiamond"></div>
+</div>
+
+<!-- Brand switch strip -->
+<nav class="brand-switch" aria-label="Switch boutique">
+  <a class="bs-btn on" href="selena-home.html">Selena ph</a>
+  <span class="bs-arrow">·</span>
+  <a class="bs-btn" href="sulit-home.html">
+    Sulit Dito MNL
+    <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+  </a>
+</nav>
+
+<!-- Header -->
+<header id="header">
+  <div class="header-in">
+    <a class="logo" href="selena-home.html">Selena ph</a>
+    <nav>
+      <a class="nav-link" href="selena-home.html">Home</a>
+      <a class="nav-link" href="selena-products.html">Products</a>
+      <a class="nav-link" href="selena-sale.html">Sale</a>
+      <a class="nav-link active" href="selena-about.html">About</a>
+      <a class="nav-link" href="selena-contact.html">Contact</a>
+    </nav>
+    <div class="h-right">
+      <a class="btn btn-ghost visit-btn" href="selena-contact.html">Reserve</a>
+      <button class="icon-btn" id="pickBtn" aria-label="Your picks">
+        <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <span id="pickCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+      </button>
+      <div class="pick-panel" id="pickPanel">
+        <div class="pp-head"><span>Your Picks</span>
+          <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </div>
+        <div class="pp-list" id="ppList"><p class="pp-empty">No picks yet — the racks await.</p></div>
+        <div class="pp-foot"><span>Total — <b id="ppTotal">₱0</b></span><button id="ppClear">Clear all</button></div>
+        <p class="pp-hint">Message us your picks on Facebook or text our number to reserve.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <span class="mm-eyebrow">Selena ph</span>
+  <a class="mm-link" href="selena-home.html">Home</a>
+  <a class="mm-link" href="selena-products.html">Products</a>
+  <a class="mm-link" href="selena-sale.html">Sale</a>
+  <a class="mm-link" href="selena-about.html">About</a>
+  <a class="mm-link" href="selena-contact.html">Contact</a>
+</div>
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="ph-mark" aria-hidden="true">Atelier</div>
+  <div class="wrap">
+    <p class="ph-eyebrow">— The Atelier</p>
+    <h1>Every dress deserves <em>another spin</em>.</h1>
+    <p>Selena ph began with a simple frustration: gorgeous dresses hanging unworn in closets while other women searched everywhere for exactly that piece. So we built the bridge.</p>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="m-track">
+    <div class="m-group">
+      <span class="m-item">Brand-new arrivals</span><span class="m-d"></span>
+      <span class="m-item">Pre-loved gems</span><span class="m-d"></span>
+      <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
+      <span class="m-item">Dresses only</span><span class="m-d"></span>
+      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+    </div>
+    <div class="m-group">
+      <span class="m-item">Brand-new arrivals</span><span class="m-d"></span>
+      <span class="m-item">Pre-loved gems</span><span class="m-d"></span>
+      <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
+      <span class="m-item">Dresses only</span><span class="m-d"></span>
+      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Atelier -->
+<section class="atelier" id="atelier">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">01 — The Atelier</p>
+        <h2>Every dress deserves <em>another spin</em>.</h2>
+        <p>Selena ph began with a simple frustration: gorgeous dresses hanging unworn in closets while other women searched everywhere for exactly that piece. So we built the bridge.</p>
+      </div>
+      <span class="sec-num">01</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal" style="--d:.05s">
+        <p class="lede">Our racks carry two kinds of dresses — brand-new pieces chosen from trusted suppliers, and pre-loved gems we inspect, launder and photograph honestly, one by one.</p>
+        <p>Nothing here is fast fashion filler. Whether it arrives with tags or with a history, every dress leaves us ready for a wedding, a date, a first day of work — whatever moment you're dressing for. And in sizes Small through Extra Large, there's a fit waiting for every body.</p>
+        <p>We believe a dress should never hang unworn. Each one finds a new home, or a new beginning, with the woman who was meant to wear it next.</p>
+        <p class="sig">Selena<small>Founder &amp; Curator</small></p>
+      </div>
+
+      <div class="reveal" style="--d:.15s">
+        <figure class="quote-card">
+          <blockquote class="q">A dress should never hang unworn — we find them <em>new homes</em>, or <em>new beginnings</em>.</blockquote>
+          <figcaption class="q-attr">From the Selena ph journal</figcaption>
+        </figure>
+        <div class="values">
+          <div class="value"><b>Brand new</b><span>Fresh pieces with tags on, straight from our suppliers.</span></div>
+          <div class="value"><b>Pre-loved</b><span>Carefully inspected, laundered and honestly described.</span></div>
+          <div class="value"><b>Sizes S–XL</b><span>Because every woman deserves her perfect fit.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span></span></div>
+
+<!-- CTA -->
+<section class="sec" style="padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">02 — Browse the racks</p>
+        <h2>Find your <em>next dress</em>.</h2>
+        <p>Ready to see what's on the racks? Head to the collection, or browse today's pre-loved sale finds.</p>
+      </div>
+      <span class="sec-num">02</span>
+    </div>
+    <div class="p-more reveal" style="margin-top:0">
+      <div class="btn-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-solid" href="selena-products.html"><span>The Collection</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn-ghost" href="selena-sale.html"><span>Pre-Loved Sale</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p class="foot-name">Selena ph</p>
+  <p class="foot-tag">Dresses for women · Brand new &amp; pre-loved</p>
+  <hr class="foot-hr">
+  <div class="foot-grid">
+    <div>
+      <p class="f-head">Browse</p>
+      <div class="f-links">
+        <a href="selena-home.html">Home</a>
+        <a href="selena-products.html">Products</a>
+        <a href="selena-sale.html">Sale</a>
+        <a href="selena-about.html">About</a>
+        <a href="selena-contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="f-visit">
+      <p class="f-head">Visit</p>
+      <p>Shop address here, City, Philippines<br>Monday – Saturday · 10am – 7pm<br>Call / Text — 0917 123 4567</p>
+    </div>
+    <div class="f-hello">
+      <p class="f-head">Say Hello</p>
+      <p>New dresses drop on our page every week — follow along and message us anytime to reserve.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" onclick="return false;">
+          <svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+        <a href="#" aria-label="Facebook" onclick="return false;">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="tel:+639171234567" aria-label="Call us">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 Selena ph — Curated with love.</span>
+    <span>Sizes S · M · L · XL</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div id="toasts" aria-live="polite"></div>
+
+<script src="selena.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sulit Dito MNL — Sale · Super Sale Steals</title>
+<meta name="description" content="Sulit Dito MNL — Super sale steals, limited stock, first-come first-served.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F7CBA2'/%3E%3Ccircle cx='32' cy='32' r='26.5' fill='none' stroke='%23FFF7EC' stroke-width='2'/%3E%3Cg transform='translate(20 36) rotate(-14)'%3E%3Cpath d='M-4 -8 C -4 -14 4 -14 4 -8' fill='none' stroke='%231C4A5A' stroke-width='2.2'/%3E%3Crect x='-8' y='-8' width='16' height='18' rx='2.5' fill='%232BA6DB'/%3E%3C/g%3E%3Cg transform='translate(32 38) rotate(-2)'%3E%3Cpath d='M-3.5 -7 C -3.5 -12.5 3.5 -12.5 3.5 -7' fill='none' stroke='%231C4A5A' stroke-width='2.2'/%3E%3Crect x='-7' y='-7' width='14' height='16' rx='2.5' fill='%23FFC93C'/%3E%3C/g%3E%3Cg transform='translate(44 36) rotate(14)'%3E%3Cpath d='M-4 -8 C -4 -14 4 -14 4 -8' fill='none' stroke='%231C4A5A' stroke-width='2.2'/%3E%3Crect x='-8' y='-8' width='16' height='18' rx='2.5' fill='%23F26E1C'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sulit.css">
+</head>
+<body>
+
+<div class="thread" aria-hidden="true">
+  <div id="threadFill"></div>
+  <div id="threadDiamond"></div>
+</div>
+
+<!-- Brand switch strip -->
+<nav class="brand-switch" aria-label="Switch boutique">
+  <a class="bs-btn" href="selena-home.html">
+    Selena ph
+    <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+  </a>
+  <span class="bs-arrow">·</span>
+  <a class="bs-btn on" href="sulit-home.html">Sulit Dito MNL</a>
+</nav>
+
+<!-- Header -->
+<header id="header">
+  <div class="header-in">
+    <a class="logo" href="sulit-home.html">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <g transform="translate(15 28) rotate(-20)"><g class="bagl"><rect x="-10" y="-10" width="20" height="22" rx="3" fill="#2BA6DB" stroke="#FFF6EC" stroke-width="3"/><path d="M-4.5 -10 C -4.5 -17 4.5 -17 4.5 -10" fill="none" stroke="#1C4A5A" stroke-width="2.6" stroke-linecap="round"/></g></g>
+        <g transform="translate(24 30) rotate(-4)"><g class="bagl"><rect x="-9" y="-9" width="18" height="20" rx="3" fill="#FFC93C" stroke="#FFF6EC" stroke-width="3"/><path d="M-4 -9 C -4 -15.5 4 -15.5 4 -9" fill="none" stroke="#1C4A5A" stroke-width="2.4" stroke-linecap="round"/></g></g>
+        <g transform="translate(34 28) rotate(18)"><g class="bagl"><rect x="-10" y="-10" width="20" height="22" rx="3" fill="#F26E1C" stroke="#FFF6EC" stroke-width="3"/><path d="M-4.5 -10 C -4.5 -17 4.5 -17 4.5 -10" fill="none" stroke="#1C4A5A" stroke-width="2.6" stroke-linecap="round"/></g></g>
+      </svg>
+      <span class="logo-word">Sulit Dito <em>MNL</em></span>
+    </a>
+    <nav>
+      <a class="nav-link" href="sulit-home.html">Home</a>
+      <a class="nav-link" href="sulit-products.html">Products</a>
+      <a class="nav-link active" href="sulit-sale.html">Sale</a>
+      <a class="nav-link" href="sulit-about.html">About</a>
+      <a class="nav-link" href="sulit-contact.html">Contact</a>
+    </nav>
+    <div class="h-right">
+      <a class="btn btn-ghost visit-btn" href="https://www.facebook.com/sulitditoManila" target="_blank" rel="noopener">Message us</a>
+      <button class="icon-btn" id="pickBtn" aria-label="Your picks">
+        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span id="pickCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+      </button>
+      <div class="pick-panel" id="pickPanel">
+        <div class="pp-head"><span>Your Picks</span>
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
+        </div>
+        <div class="pp-list" id="ppList"><p class="pp-empty">No picks yet — the finds await.</p></div>
+        <div class="pp-foot"><span>Total — <b id="ppTotal">₱0</b></span><button id="ppClear">Clear all</button></div>
+        <p class="pp-hint">Send your picks to our <a href="https://www.facebook.com/sulitditoManila" target="_blank" rel="noopener">Facebook page</a> or text <b>0969 450 7597</b> — half payment (50%) secures your order.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <span class="mm-eyebrow">Sulit Dito MNL</span>
+  <a class="mm-link" href="sulit-home.html">Home</a>
+  <a class="mm-link" href="sulit-products.html">Products</a>
+  <a class="mm-link" href="sulit-sale.html">Sale</a>
+  <a class="mm-link" href="sulit-about.html">About</a>
+  <a class="mm-link" href="sulit-contact.html">Contact</a>
+</div>
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="ph-mark" aria-hidden="true">Sale!</div>
+  <div class="wrap">
+    <p class="ph-eyebrow">— On sale now · limited stock</p>
+    <h1>Super <em>sulit</em> steals.</h1>
+    <p>Discounted brand-new items — limited stock, sold first-come, first-served. Once they're gone, they're gone.</p>
+    <div class="ph-cta">
+      <a class="btn btn-solid" href="#sale-finds"><span>Shop the steals</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="m-track">
+    <div class="m-group">
+      <span class="m-item">Super sale steals</span><span class="m-d"></span>
+      <span class="m-item">Limited stock</span><span class="m-d"></span>
+      <span class="m-item">First come, first served</span><span class="m-d"></span>
+      <span class="m-item"><em>50% down to reserve</em></span><span class="m-d"></span>
+    </div>
+    <div class="m-group">
+      <span class="m-item">Super sale steals</span><span class="m-d"></span>
+      <span class="m-item">Limited stock</span><span class="m-d"></span>
+      <span class="m-item">First come, first served</span><span class="m-d"></span>
+      <span class="m-item"><em>50% down to reserve</em></span><span class="m-d"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Sale finds -->
+<section class="sec" id="sale-finds">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">01 — Super Sale Steals</p>
+        <h2>Discounted <em>finds</em>, gone in a flash.</h2>
+        <p>Brand new items on super sale — limited stock, sold first-come, first-served. All items are tested (watches &amp; electronics) before shipping.</p>
+      </div>
+      <span class="sec-num">01</span>
+    </div>
+
+    <div class="pgrid">
+
+      <article class="product pr-1 reveal" style="--d:0s">
+        <div class="p-top"><span class="p-no">Nº 01</span><span class="cond sale">Super Sale</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <rect x="85" y="22" width="30" height="42" rx="9"/>
+            <rect x="85" y="136" width="30" height="42" rx="9"/>
+            <path d="M85 52 h30 M85 148 h30" class="hairln"/>
+            <circle cx="100" cy="100" r="36"/>
+            <circle cx="100" cy="100" r="27" class="gfill"/>
+            <path d="M100 82 V100 L113 108"/>
+            <circle cx="100" cy="100" r="2.5" class="gf"/>
+            <path d="M136 94 h7 v12 h-7"/>
+            <line x1="52" y1="184" x2="148" y2="184" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>Minimalist Mesh Watch</h3><span class="p-price"><s class="was">₱499</s>₱350</span></div>
+          <p>Unisex mesh-strap watch with quartz movement — tested and working, video proof sent on chat before shipping.</p>
+          <div class="sizes-row">
+            <span class="s-label">Colors</span>
+            <div class="sizes">
+              <span class="size on">Black</span><span class="size">Silver</span><span class="size">Rose Gold</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="Minimalist Mesh Watch (Sale)" data-price="350">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-2 reveal" style="--d:.12s">
+        <div class="p-top"><span class="p-no">Nº 02</span><span class="cond sale">Super Sale</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M46 92 L28 84"/><path d="M154 92 L172 84"/>
+            <rect x="46" y="84" width="46" height="34" rx="15" class="gfill"/>
+            <rect x="108" y="84" width="46" height="34" rx="15" class="gfill"/>
+            <path d="M92 92 q8 -8 16 0"/>
+            <path d="M56 90 q3 12 13 15" class="hairln"/>
+            <path d="M118 90 q3 12 13 15" class="hairln"/>
+            <line x1="50" y1="184" x2="150" y2="184" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>Sunshield Sunglasses</h3><span class="p-price"><s class="was">₱299</s>₱199</span></div>
+          <p>UV400 lenses with a lightweight frame — limited Super Sale stock, first-come first-served.</p>
+          <div class="sizes-row">
+            <span class="s-label">Colors</span>
+            <div class="sizes">
+              <span class="size on">Black</span><span class="size">Tortoise</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="Sunshield Sunglasses (Sale)" data-price="199">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-3 reveal" style="--d:0s">
+        <div class="p-top"><span class="p-no">Nº 03</span><span class="cond sale">Super Sale</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <rect x="60" y="60" width="80" height="100" rx="14"/>
+            <circle cx="100" cy="130" r="20" class="gfill"/>
+            <circle cx="100" cy="130" r="14" fill="none" stroke="#fff" stroke-width="2"/>
+            <rect x="90" y="72" width="20" height="6" rx="2" class="g"/>
+            <rect x="130" y="80" width="14" height="22" rx="3" class="g"/>
+            <line x1="50" y1="184" x2="150" y2="184" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>Power Bank 10K</h3><span class="p-price"><s class="was">₱599</s>₱399</span></div>
+          <p>10,000mAh dual-output power bank with digital display — tested before shipping, photo proof on chat.</p>
+          <div class="sizes-row">
+            <span class="s-label">Colors</span>
+            <div class="sizes">
+              <span class="size on">White</span><span class="size">Black</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="Power Bank 10K (Sale)" data-price="399">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-4 reveal" style="--d:.12s">
+        <div class="p-top"><span class="p-no">Nº 04</span><span class="cond sale">Super Sale</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M78 80 V64 a22 20 0 0 1 44 0 V80"/>
+            <path d="M62 80 L138 80 L148 162 L52 162 Z"/>
+            <rect x="88" y="106" width="24" height="20" rx="4" class="g"/>
+            <path d="M62 150 L138 150" class="hairln"/>
+            <line x1="48" y1="182" x2="152" y2="182" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>Everyday Tote (Sale)</h3><span class="p-price"><s class="was">₱350</s>₱250</span></div>
+          <p>Heavy-duty canvas tote — fits your whole palengge run, or laptop + tumbler + gym shoes in one go.</p>
+          <div class="sizes-row">
+            <span class="s-label">Colors</span>
+            <div class="sizes">
+              <span class="size on">Natural</span><span class="size">Navy</span><span class="size">Black</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="Everyday Tote (Sale)" data-price="250">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="p-more reveal">
+      <a class="btn btn-light" href="sulit-contact.html"><span>Reserve a steal — message us</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p class="foot-name">Sulit Dito MNL</p>
+  <p class="foot-tag">Brand new finds · Super sale steals · Quezon City</p>
+  <hr class="foot-hr">
+  <div class="foot-grid">
+    <div>
+      <p class="f-head">Browse</p>
+      <div class="f-links">
+        <a href="sulit-home.html">Home</a>
+        <a href="sulit-products.html">Products</a>
+        <a href="sulit-sale.html">Sale</a>
+        <a href="sulit-about.html">About</a>
+        <a href="sulit-contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="f-visit">
+      <p class="f-head">Visit</p>
+      <p>Holy Spirit, Quezon City,<br>Philippines, 1127<br>Call / Text — 0969 450 7597<br>Ship-out cut-off — 5PM daily</p>
+    </div>
+    <div class="f-hello">
+      <p class="f-head">Sulit Updates</p>
+      <p>New arrivals and sale drops are posted on our Facebook page — follow us for updates and message us anytime to order.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/sulitditoManila" target="_blank" rel="noopener" aria-label="Facebook page">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="tel:+639694507597" aria-label="Call or text us">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://maps.google.com/?q=Holy+Spirit,+Quezon+City,+Philippines+1127" target="_blank" rel="noopener" aria-label="Find us on the map">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 Sulit Dito MNL — Sulit na sulit!</span>
+    <span>Holy Spirit, Quezon City · Ships nationwide</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div id="toasts" aria-live="polite"></div>
+
+<script src="sulit.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selena ph — Sale · Pre-Loved Dresses</title>
+<meta name="description" content="Selena ph — Pre-loved dresses, beautifully inspected and laundered, gently priced.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="selena.css">
+</head>
+<body>
+
+<div class="thread" aria-hidden="true">
+  <div id="threadFill"></div>
+  <div id="threadDiamond"></div>
+</div>
+
+<!-- Brand switch strip -->
+<nav class="brand-switch" aria-label="Switch boutique">
+  <a class="bs-btn on" href="selena-home.html">Selena ph</a>
+  <span class="bs-arrow">·</span>
+  <a class="bs-btn" href="sulit-home.html">
+    Sulit Dito MNL
+    <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+  </a>
+</nav>
+
+<!-- Header -->
+<header id="header">
+  <div class="header-in">
+    <a class="logo" href="selena-home.html">Selena ph</a>
+    <nav>
+      <a class="nav-link" href="selena-home.html">Home</a>
+      <a class="nav-link" href="selena-products.html">Products</a>
+      <a class="nav-link active" href="selena-sale.html">Sale</a>
+      <a class="nav-link" href="selena-about.html">About</a>
+      <a class="nav-link" href="selena-contact.html">Contact</a>
+    </nav>
+    <div class="h-right">
+      <a class="btn btn-ghost visit-btn" href="selena-contact.html">Reserve</a>
+      <button class="icon-btn" id="pickBtn" aria-label="Your picks">
+        <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <span id="pickCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+      </button>
+      <div class="pick-panel" id="pickPanel">
+        <div class="pp-head"><span>Your Picks</span>
+          <svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </div>
+        <div class="pp-list" id="ppList"><p class="pp-empty">No picks yet — the racks await.</p></div>
+        <div class="pp-foot"><span>Total — <b id="ppTotal">₱0</b></span><button id="ppClear">Clear all</button></div>
+        <p class="pp-hint">Message us your picks on Facebook or text our number to reserve.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <span class="mm-eyebrow">Selena ph</span>
+  <a class="mm-link" href="selena-home.html">Home</a>
+  <a class="mm-link" href="selena-products.html">Products</a>
+  <a class="mm-link" href="selena-sale.html">Sale</a>
+  <a class="mm-link" href="selena-about.html">About</a>
+  <a class="mm-link" href="selena-contact.html">Contact</a>
+</div>
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="ph-mark" aria-hidden="true">Sale</div>
+  <div class="wrap">
+    <p class="ph-eyebrow">— On sale now · pre-loved only</p>
+    <h1><em>Pre-loved</em> dresses, gently priced.</h1>
+    <p>Beautifully pre-loved dresses — inspected, laundered, and photographed honestly. Sustainable, affordable, full of character.</p>
+    <div class="ph-cta">
+      <a class="btn btn-solid" href="#sale-rack"><span>Shop pre-loved</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="m-track">
+    <div class="m-group">
+      <span class="m-item">Pre-loved gems</span><span class="m-d"></span>
+      <span class="m-item">Inspected &amp; laundered</span><span class="m-d"></span>
+      <span class="m-item">Honestly described</span><span class="m-d"></span>
+      <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
+      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+    </div>
+    <div class="m-group">
+      <span class="m-item">Pre-loved gems</span><span class="m-d"></span>
+      <span class="m-item">Inspected &amp; laundered</span><span class="m-d"></span>
+      <span class="m-item">Honestly described</span><span class="m-d"></span>
+      <span class="m-item">Sizes S — XL</span><span class="m-d"></span>
+      <span class="m-item">Curated weekly</span><span class="m-d"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Sale rack -->
+<section class="sec" id="sale-rack">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="kicker">01 — Pre-Loved Rack</p>
+        <h2>Beautifully <em>pre-loved</em>, gently priced.</h2>
+        <p>Each pre-loved dress is inspected, laundered, and photographed honestly. Sustainable, affordable, and full of character — quality that outlasts any trend.</p>
+      </div>
+      <span class="sec-num">01</span>
+    </div>
+
+    <div class="pgrid">
+
+      <article class="product pr-1 reveal" style="--d:0s">
+        <div class="p-top"><span class="p-no">Nº 01</span><span class="cond pre">Pre-Loved</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M100 30 v-5 q0 -6 6 -6" class="hairln"/>
+            <path d="M64 44 L100 30 L136 44" class="hairln"/>
+            <path d="M84 46 C 80 64 78 82 78 98 L122 98 C 122 82 120 64 116 46"/>
+            <path d="M84 46 L100 86 L116 46"/>
+            <path d="M92 50 L108 84" class="hairln"/>
+            <path d="M78 98 C 68 128 60 150 56 166 L144 166 C 140 150 132 128 122 98"/>
+            <rect x="78" y="94" width="44" height="7" class="g"/>
+            <rect x="96.5" y="94" width="7" height="7" class="gf" transform="rotate(45 100 97.5)"/>
+            <line x1="52" y1="176" x2="148" y2="176" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>The Wrap Dress</h3><span class="p-price">₱780</span></div>
+          <p>A floral wrap in soft viscose, gently worn once or twice and freshly laundered — quality that outlasts any trend.</p>
+          <div class="sizes-row">
+            <span class="s-label">Sizes</span>
+            <div class="sizes">
+              <span class="size">S</span><span class="size on">M</span><span class="size">L</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="The Wrap Dress" data-price="780">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-2 reveal" style="--d:.12s">
+        <div class="p-top"><span class="p-no">Nº 02</span><span class="cond pre">Pre-Loved</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M78 58 C 90 68 110 68 122 58"/>
+            <path d="M78 60 C 64 60 58 74 64 86 C 68 92 76 90 78 82"/>
+            <path d="M122 60 C 136 60 142 74 136 86 C 132 92 124 90 122 82"/>
+            <path d="M78 58 C 76 74 76 88 78 100 L122 100 C 124 88 124 74 122 58"/>
+            <path d="M78 100 C 64 132 56 154 52 172 L148 172 C 144 154 136 132 122 100"/>
+            <path d="M92 110 C 88 136 84 152 82 166" class="hairln"/>
+            <path d="M108 110 C 112 136 116 152 118 166" class="hairln"/>
+            <rect x="97" y="77" width="6" height="6" class="gf" transform="rotate(45 100 80)"/>
+            <line x1="50" y1="182" x2="150" y2="182" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>The Garden Maxi</h3><span class="p-price">₱690</span></div>
+          <p>An off-shoulder maxi in dusty rose — one careful previous owner and many summers still ahead of it.</p>
+          <div class="sizes-row">
+            <span class="s-label">Sizes</span>
+            <div class="sizes">
+              <span class="size on">M</span><span class="size">L</span><span class="size">XL</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="The Garden Maxi" data-price="690">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-3 reveal" style="--d:0s">
+        <div class="p-top"><span class="p-no">Nº 03</span><span class="cond pre">Pre-Loved</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M70 50 L100 30 L130 50"/>
+            <path d="M70 50 L65 160 L135 160 L130 50"/>
+            <path d="M85 60 L100 100 L115 60" class="hairln"/>
+            <path d="M80 130 L120 130" class="hairln"/>
+            <circle cx="90" cy="80" r="2" class="gf"/>
+            <circle cx="110" cy="100" r="2" class="gf"/>
+            <circle cx="100" cy="140" r="2" class="gf"/>
+            <line x1="50" y1="178" x2="150" y2="178" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>The Slip Midi</h3><span class="p-price">₱580</span></div>
+          <p>A simple slip midi in soft jersey — pre-loved but in lovely condition, ready for layering or wearing solo.</p>
+          <div class="sizes-row">
+            <span class="s-label">Sizes</span>
+            <div class="sizes">
+              <span class="size">S</span><span class="size on">M</span><span class="size">L</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="The Slip Midi" data-price="580">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+      <article class="product pr-4 reveal" style="--d:.12s">
+        <div class="p-top"><span class="p-no">Nº 04</span><span class="cond pre">Pre-Loved</span></div>
+        <div class="frame"><div class="art">
+          <svg viewBox="0 0 200 200">
+            <path d="M82 50 Q100 30 118 50"/>
+            <path d="M70 60 Q100 70 130 60"/>
+            <path d="M70 60 L60 162 L140 162 L130 60"/>
+            <path d="M75 100 L125 100" class="hairln"/>
+            <path d="M90 70 Q100 80 110 70" class="hairln"/>
+            <rect x="95" y="115" width="10" height="10" class="gf" transform="rotate(45 100 120)"/>
+            <line x1="50" y1="178" x2="150" y2="178" class="hairln"/>
+          </svg>
+        </div></div>
+        <div class="p-info">
+          <div class="p-row"><h3>The Tea Dress</h3><span class="p-price">₱620</span></div>
+          <p>A vintage-inspired tea dress with puff sleeves — pre-loved, freshly laundered, ready for brunches and birthdays.</p>
+          <div class="sizes-row">
+            <span class="s-label">Sizes</span>
+            <div class="sizes">
+              <span class="size">S</span><span class="size on">M</span><span class="size">L</span><span class="size">XL</span>
+            </div>
+          </div>
+          <button class="reserve" data-name="The Tea Dress" data-price="620">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg> Add to picks</button>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="p-more reveal">
+      <a class="btn btn-light" href="selena-contact.html"><span>Reserve a piece — message us</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p class="foot-name">Selena ph</p>
+  <p class="foot-tag">Dresses for women · Brand new &amp; pre-loved</p>
+  <hr class="foot-hr">
+  <div class="foot-grid">
+    <div>
+      <p class="f-head">Browse</p>
+      <div class="f-links">
+        <a href="selena-home.html">Home</a>
+        <a href="selena-products.html">Products</a>
+        <a href="selena-sale.html">Sale</a>
+        <a href="selena-about.html">About</a>
+        <a href="selena-contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="f-visit">
+      <p class="f-head">Visit</p>
+      <p>Shop address here, City, Philippines<br>Monday – Saturday · 10am – 7pm<br>Call / Text — 0917 123 4567</p>
+    </div>
+    <div class="f-hello">
+      <p class="f-head">Say Hello</p>
+      <p>New dresses drop on our page every week — follow along and message us anytime to reserve.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" onclick="return false;">
+          <svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+        <a href="#" aria-label="Facebook" onclick="return false;">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="tel:+639171234567" aria-label="Call us">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 Selena ph — Curated with love.</span>
+    <span>Sizes S · M · L · XL</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div id="toasts" aria-live="polite"></div>
+
+<script src="selena.js"></script>
+</body>
+</html>
